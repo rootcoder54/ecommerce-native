@@ -6,6 +6,7 @@ import { ThemedView } from "@/components/global/ThemedView";
 import { Header } from "@/components/home/Header";
 import { Categorie } from "@/components/home/categorie";
 import { Categories } from "@/components/home/Categories";
+import { Nouveautes } from "@/components/home/Nouveautes";
 
 export default function HomeScreen() {
   return (
@@ -17,6 +18,7 @@ export default function HomeScreen() {
         <ThemedText type="title">Hello User!</ThemedText>
       </ThemedView>
       <Categories />
+      <Nouveautes />
     </ParallaxScrollView>
   );
 }
