@@ -3,12 +3,13 @@ import { Image, StyleSheet, Platform, Text } from 'react-native';
 import ParallaxScrollView from '@/components/global/ParallaxScrollView';
 import { ThemedText } from '@/components/global/ThemedText';
 import { ThemedView } from '@/components/global/ThemedView';
+import { Header } from '@/components/home/Header';
 
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      header={<ThemedText type="subtitle">Step 2: Explore</ThemedText>}>
+      header={<Header />}>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Welcome!</ThemedText>
       </ThemedView>
